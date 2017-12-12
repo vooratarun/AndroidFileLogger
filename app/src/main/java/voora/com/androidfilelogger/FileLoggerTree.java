@@ -46,6 +46,8 @@ public class FileLoggerTree extends Timber.Tree {
                 logSync(priority, tag, message, t);
             } catch (IOException e) {
                 e.printStackTrace();
+
+                // Send this to analytics event.
             }
         }).subscribeOn(Schedulers.io())
         .observeOn(Schedulers.io()).subscribe(new Action0() {

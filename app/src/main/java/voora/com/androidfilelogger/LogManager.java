@@ -23,8 +23,9 @@ public class LogManager {
         fileLoggerTree = new FileLoggerTree(context);
 
         Timber.plant(fileLoggerTree);
-
     }
+
+
 
     public static LogManager getInstance(Context context) {
         if(INSTANCE == null)
