@@ -5,9 +5,9 @@ android {
     signingConfigs {
         config {
             keyAlias 'keystore'
-            keyPassword 'tarun123'
+            keyPassword ''
             storeFile file('/Users/tarun/Desktop/android/AndroidFileLogger/keystore')
-            storePassword 'tarun123'
+            storePassword ''
         }
     }
     compileSdkVersion 26
